@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		4CEFDE3E1DE88F7000B8C292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE3D1DE88F7000B8C292 /* AppDelegate.swift */; };
-		4CEFDE401DE88F7000B8C292 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE3F1DE88F7000B8C292 /* ViewController.swift */; };
 		4CEFDE431DE88F7000B8C292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEFDE411DE88F7000B8C292 /* Main.storyboard */; };
 		4CEFDE451DE88F7000B8C292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CEFDE441DE88F7000B8C292 /* Assets.xcassets */; };
 		4CEFDE481DE88F7000B8C292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEFDE461DE88F7000B8C292 /* LaunchScreen.storyboard */; };
+		4CEFDE511DE8907E00B8C292 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE501DE8907E00B8C292 /* TweetTableViewController.swift */; };
+		4CEFDE541DE893FD00B8C292 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEFDE531DE893FD00B8C292 /* Twitter.framework */; };
+		4CEFDE561DE8948000B8C292 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE551DE8948000B8C292 /* TweetTableViewCell.swift */; };
+		4CEFDE5A1DE8949A00B8C292 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE571DE8949A00B8C292 /* DetailsTableViewController.swift */; };
+		4CEFDE5B1DE8949A00B8C292 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE581DE8949A00B8C292 /* ImageTableViewCell.swift */; };
+		4CEFDE5C1DE8949A00B8C292 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE591DE8949A00B8C292 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CEFDE3A1DE88F7000B8C292 /* Smashtag-II.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smashtag-II.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEFDE3D1DE88F7000B8C292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CEFDE3F1DE88F7000B8C292 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CEFDE421DE88F7000B8C292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CEFDE441DE88F7000B8C292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CEFDE471DE88F7000B8C292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CEFDE491DE88F7000B8C292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CEFDE501DE8907E00B8C292 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
+		4CEFDE531DE893FD00B8C292 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = "../../Library/Developer/Xcode/DerivedData/Smashtag-II-gmsidxbqsiwoyeengtjxfctfzvow/Build/Products/Debug-iphoneos/Twitter.framework"; sourceTree = "<group>"; };
+		4CEFDE551DE8948000B8C292 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		4CEFDE571DE8949A00B8C292 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		4CEFDE581DE8949A00B8C292 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		4CEFDE591DE8949A00B8C292 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CEFDE541DE893FD00B8C292 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				4CEFDE3C1DE88F7000B8C292 /* Smashtag-II */,
 				4CEFDE3B1DE88F7000B8C292 /* Products */,
+				4CEFDE521DE893FD00B8C292 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +66,34 @@
 		4CEFDE3C1DE88F7000B8C292 /* Smashtag-II */ = {
 			isa = PBXGroup;
 			children = (
-				4CEFDE3D1DE88F7000B8C292 /* AppDelegate.swift */,
-				4CEFDE3F1DE88F7000B8C292 /* ViewController.swift */,
 				4CEFDE411DE88F7000B8C292 /* Main.storyboard */,
+				4CEFDE501DE8907E00B8C292 /* TweetTableViewController.swift */,
+				4CEFDE551DE8948000B8C292 /* TweetTableViewCell.swift */,
+				4CEFDE571DE8949A00B8C292 /* DetailsTableViewController.swift */,
+				4CEFDE581DE8949A00B8C292 /* ImageTableViewCell.swift */,
+				4CEFDE591DE8949A00B8C292 /* ImageViewController.swift */,
+				4CEFDE4F1DE88FD400B8C292 /* Support Files */,
+			);
+			path = "Smashtag-II";
+			sourceTree = "<group>";
+		};
+		4CEFDE4F1DE88FD400B8C292 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CEFDE3D1DE88F7000B8C292 /* AppDelegate.swift */,
 				4CEFDE441DE88F7000B8C292 /* Assets.xcassets */,
 				4CEFDE461DE88F7000B8C292 /* LaunchScreen.storyboard */,
 				4CEFDE491DE88F7000B8C292 /* Info.plist */,
 			);
-			path = "Smashtag-II";
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		4CEFDE521DE893FD00B8C292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CEFDE531DE893FD00B8C292 /* Twitter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CEFDE401DE88F7000B8C292 /* ViewController.swift in Sources */,
+				4CEFDE5A1DE8949A00B8C292 /* DetailsTableViewController.swift in Sources */,
 				4CEFDE3E1DE88F7000B8C292 /* AppDelegate.swift in Sources */,
+				4CEFDE5B1DE8949A00B8C292 /* ImageTableViewCell.swift in Sources */,
+				4CEFDE511DE8907E00B8C292 /* TweetTableViewController.swift in Sources */,
+				4CEFDE5C1DE8949A00B8C292 /* ImageViewController.swift in Sources */,
+				4CEFDE561DE8948000B8C292 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +336,7 @@
 				4CEFDE4E1DE88F7000B8C292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
