@@ -14,12 +14,10 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
         didSet {
             scrollView.contentSize = imageView.frame.size
             scrollView.delegate = self
-            scrollView.maximumZoomScale = 3.0
-            scrollView.minimumZoomScale = 0.1
         }
     }
     
-    private var imageView = UIImageView()
+    fileprivate var imageView = UIImageView()
     
     var image: UIImage? {
         get {
@@ -31,10 +29,21 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
             scrollView?.contentSize = imageView.frame.size
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
         scrollView.addSubview(imageView)
+        zoomImageToFill()
+        }
+    
+    fileprivate func zoomImageToFill() {
+        let widthRatio = view.bounds.width/imageView.bounds.width
+        let heightRatio = view.bounds.height/imageView.bounds.height
+        let ratioToFill = max(widthRatio, heightRatio)
+        let ratioToFit = min(widthRatio, heightRatio)
+        scrollView.maximumZoomScale = 2*ratioToFill
+        scrollView.minimumZoomScale = ratioToFit
+        scrollView.zoomScale = ratioToFill
     }
     
     internal func viewForZooming(in scrollView: UIScrollView) -> UIView? {

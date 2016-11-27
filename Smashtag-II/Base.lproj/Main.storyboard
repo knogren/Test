@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <textField key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter search text" textAlignment="natural" minimumFontSize="17" id="dIm-FM-CrB">
-                            <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -24,7 +24,7 @@
                         </textField>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCell" rowHeight="111" id="IJG-te-hVm" customClass="TweetTableViewCell" customModule="Smashtag_II" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="122" width="375" height="111"/>
+                                <rect key="frame" x="0.0" y="58" width="375" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IJG-te-hVm" id="SXM-ss-8zI">
                                     <frame key="frameInset" width="375" height="110.5"/>
@@ -49,14 +49,12 @@
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="15U-YC-NWb">
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" ambiguous="YES" text="Tweeter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIq-4I-psN">
-                                                            <frame key="frameInset" width="289" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="Tweeter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIq-4I-psN">
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tweet Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMb-IS-KCy">
-                                                            <frame key="frameInset" minY="21" width="289" height="74"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMb-IS-KCy">
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -106,15 +104,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" rowHeight="151" id="HXH-Uk-SZ3" customClass="ImageTableViewCell" customModule="Smashtag_II" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="151"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="151"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HXH-Uk-SZ3" id="pce-xR-ThJ">
                                     <frame key="frameInset" width="375" height="150.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lcw-AM-EWf">
-                                            <frame key="frameInset" minX="24" minY="21" width="304" height="121"/>
-                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lcw-AM-EWf"/>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Lcw-AM-EWf" firstAttribute="top" secondItem="pce-xR-ThJ" secondAttribute="topMargin" id="2ht-53-aUQ"/>
@@ -128,7 +124,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MentionCell" textLabel="QgQ-LH-mc9" rowHeight="74" style="IBUITableViewCellStyleDefault" id="wV8-0Z-Cvf">
-                                <rect key="frame" x="0.0" y="243" width="375" height="74"/>
+                                <rect key="frame" x="0.0" y="179" width="375" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wV8-0Z-Cvf" id="n8n-2k-zZF">
                                     <frame key="frameInset" width="342" height="73.5"/>
@@ -152,11 +148,12 @@
                     </tableView>
                     <connections>
                         <segue destination="OgW-aJ-fhR" kind="show" identifier="ShowImage" id="Zct-6m-5QM"/>
+                        <segue destination="L67-l3-euB" kind="show" identifier="ShowTweets" id="nDu-Bd-Fav"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJi-1H-WT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1784.8" y="158.77061469265368"/>
+            <point key="canvasLocation" x="1678.5" y="-609.5"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="VGG-iH-dn2">
@@ -174,10 +171,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="b3u-PE-m5n" firstAttribute="bottom" secondItem="AMl-lQ-YMb" secondAttribute="top" id="cHa-0b-T7L"/>
-                            <constraint firstAttribute="trailing" secondItem="b3u-PE-m5n" secondAttribute="trailing" id="iTh-Vi-ojW"/>
-                            <constraint firstItem="b3u-PE-m5n" firstAttribute="leading" secondItem="l9e-es-RpK" secondAttribute="leading" id="wua-u8-FMz"/>
-                            <constraint firstItem="b3u-PE-m5n" firstAttribute="top" secondItem="nf6-la-a8X" secondAttribute="bottom" id="yrh-fd-4M5"/>
+                            <constraint firstAttribute="trailing" secondItem="b3u-PE-m5n" secondAttribute="trailing" id="A90-8A-9cQ"/>
+                            <constraint firstItem="b3u-PE-m5n" firstAttribute="top" secondItem="l9e-es-RpK" secondAttribute="top" id="hLf-WF-Mah"/>
+                            <constraint firstItem="b3u-PE-m5n" firstAttribute="leading" secondItem="l9e-es-RpK" secondAttribute="leading" id="lXu-vS-dLw"/>
+                            <constraint firstItem="b3u-PE-m5n" firstAttribute="bottom" secondItem="AMl-lQ-YMb" secondAttribute="top" id="naB-kD-TZQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -186,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJr-VW-Ndd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568.8000000000002" y="-49.025487256371818"/>
+            <point key="canvasLocation" x="2528.8000000000002" y="-609.44527736131943"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Ft-kk-FGf">
@@ -207,4 +204,7 @@
             <point key="canvasLocation" x="-47.200000000000003" y="158.77061469265368"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nDu-Bd-Fav"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -110,7 +110,7 @@ class DetailsTableViewController: UITableViewController {
         let data = tweetComponents[indexPath.section][indexPath.row]
         switch data {
         case .Pic(let media):
-            let screenWidth: CGFloat = UIScreen.main.bounds.size.width
+            let screenWidth = UIScreen.main.bounds.size.width
             let imageHeight = screenWidth/CGFloat(media.aspectRatio)
             return imageHeight
         case .Hashtag, .URL, .UserMention:
@@ -124,7 +124,7 @@ class DetailsTableViewController: UITableViewController {
         case .Pic:
             performSegue(withIdentifier: "ShowImage", sender: tableView.cellForRow(at: indexPath))
         case .Hashtag, .UserMention:
-            performSegue(withIdentifier: "ShowTweets", sender: UITableView.self)
+            performSegue(withIdentifier: "ShowTweets", sender: tableView.cellForRow(at: indexPath))
         case  .URL(let urlMention):
             let url = URL(string: urlMention.keyword)
             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
@@ -176,19 +176,15 @@ class DetailsTableViewController: UITableViewController {
                 }
             }
         }
-        
         if segue.identifier == "ShowTweets" {
-            if let selectedCell = sender as? TweetTableViewCell {
-                let indexPath = tableView.indexPath(for: selectedCell)
-                let data = tweetComponents[(indexPath?.section)!][(indexPath?.row)!]
-                switch data {
-                case .Hashtag(let mention), .UserMention(let mention):
-                    if let tweetTableVC = (segue.destination as? UITableViewController) as? TweetTableViewController{
-                        tweetTableVC.searchText = mention.keyword
+            if let cell = sender as? UITableViewCell {
+                if let searchText = cell.textLabel?.text {
+                    if let tweetTableVC = segue.destination as? TweetTableViewController {
+                        tweetTableVC.searchText = searchText
                     }
-                case .Pic, .URL: break
                 }
             }
         }
     }
+
 }
