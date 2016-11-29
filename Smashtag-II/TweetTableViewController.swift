@@ -9,6 +9,8 @@
 import UIKit
 import Twitter
 
+var searchHistory = TwitterSearchHistory()
+
 class TweetTableViewController: UITableViewController, UITextFieldDelegate {
     
     var tweets = [Array<Twitter.Tweet>]() {
@@ -23,6 +25,9 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
         didSet {
             tweets.removeAll()
             searchForTweets()
+            if let query = searchText {
+                searchHistory.saveSearchTerm(term: query)
+            }
             title = searchText
         }
     }
