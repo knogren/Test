@@ -8,10 +8,14 @@
 
 import UIKit
 import Twitter
+import CoreData
 
 var searchHistory = TwitterSearchHistory()
 
 class TweetTableViewController: UITableViewController, UITextFieldDelegate {
+    
+    var managedObjectContext: NSManagedObjectContext?
+        = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     var tweets = [Array<Twitter.Tweet>]() {
         didSet {

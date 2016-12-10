@@ -10,6 +10,7 @@
 		4C8EB5581DECB41100236791 /* TwitterSearchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EB5571DECB41100236791 /* TwitterSearchHistory.swift */; };
 		4C8EB55A1DED4B1A00236791 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EB5591DED4B1A00236791 /* HistoryTableViewController.swift */; };
 		4CE112971DFCAA20001B4DCD /* HistoryInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE112961DFCAA20001B4DCD /* HistoryInfoTableViewController.swift */; };
+		4CE1129B1DFCAE8A001B4DCD /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1129A1DFCAE8A001B4DCD /* CoreDataTableViewController.swift */; };
 		4CEFDE3E1DE88F7000B8C292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE3D1DE88F7000B8C292 /* AppDelegate.swift */; };
 		4CEFDE431DE88F7000B8C292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEFDE411DE88F7000B8C292 /* Main.storyboard */; };
 		4CEFDE451DE88F7000B8C292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CEFDE441DE88F7000B8C292 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		4C8EB5571DECB41100236791 /* TwitterSearchHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSearchHistory.swift; sourceTree = "<group>"; };
 		4C8EB5591DED4B1A00236791 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		4CE112961DFCAA20001B4DCD /* HistoryInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryInfoTableViewController.swift; sourceTree = "<group>"; };
+		4CE1129A1DFCAE8A001B4DCD /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
 		4CEFDE3A1DE88F7000B8C292 /* Smashtag-II.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smashtag-II.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEFDE3D1DE88F7000B8C292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CEFDE421DE88F7000B8C292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CE1129C1DFCAE91001B4DCD /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4CE1129A1DFCAE8A001B4DCD /* CoreDataTableViewController.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		4CEFDE311DE88F7000B8C292 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 				4C8EB5571DECB41100236791 /* TwitterSearchHistory.swift */,
 				4C8EB5591DED4B1A00236791 /* HistoryTableViewController.swift */,
 				4CE112961DFCAA20001B4DCD /* HistoryInfoTableViewController.swift */,
+				4CE1129C1DFCAE91001B4DCD /* Core Data */,
 				4CEFDE4F1DE88FD400B8C292 /* Support Files */,
 			);
 			path = "Smashtag-II";
@@ -186,6 +197,7 @@
 				4CEFDE5C1DE8949A00B8C292 /* ImageViewController.swift in Sources */,
 				4CEFDE561DE8948000B8C292 /* TweetTableViewCell.swift in Sources */,
 				4CE112971DFCAA20001B4DCD /* HistoryInfoTableViewController.swift in Sources */,
+				4CE1129B1DFCAE8A001B4DCD /* CoreDataTableViewController.swift in Sources */,
 				4C8EB5581DECB41100236791 /* TwitterSearchHistory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

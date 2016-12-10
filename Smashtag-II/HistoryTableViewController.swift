@@ -9,7 +9,7 @@
 import UIKit
 
 class HistoryTableViewController: UITableViewController {
-    
+        
     var historyList = [String]() {
         didSet {
             tableView.reloadData()
