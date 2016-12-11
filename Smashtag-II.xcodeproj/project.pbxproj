@@ -11,6 +11,11 @@
 		4C8EB55A1DED4B1A00236791 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EB5591DED4B1A00236791 /* HistoryTableViewController.swift */; };
 		4CE112971DFCAA20001B4DCD /* HistoryInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE112961DFCAA20001B4DCD /* HistoryInfoTableViewController.swift */; };
 		4CE1129B1DFCAE8A001B4DCD /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1129A1DFCAE8A001B4DCD /* CoreDataTableViewController.swift */; };
+		4CE1129F1DFD11C7001B4DCD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1129D1DFD11C7001B4DCD /* Model.xcdatamodeld */; };
+		4CE465D01DFD18C200EBBDD4 /* Id+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE465CC1DFD18C200EBBDD4 /* Id+CoreDataClass.swift */; };
+		4CE465D11DFD18C200EBBDD4 /* Id+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE465CD1DFD18C200EBBDD4 /* Id+CoreDataProperties.swift */; };
+		4CE465D21DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE465CE1DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataClass.swift */; };
+		4CE465D31DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE465CF1DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataProperties.swift */; };
 		4CEFDE3E1DE88F7000B8C292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFDE3D1DE88F7000B8C292 /* AppDelegate.swift */; };
 		4CEFDE431DE88F7000B8C292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CEFDE411DE88F7000B8C292 /* Main.storyboard */; };
 		4CEFDE451DE88F7000B8C292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CEFDE441DE88F7000B8C292 /* Assets.xcassets */; };
@@ -28,6 +33,11 @@
 		4C8EB5591DED4B1A00236791 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		4CE112961DFCAA20001B4DCD /* HistoryInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryInfoTableViewController.swift; sourceTree = "<group>"; };
 		4CE1129A1DFCAE8A001B4DCD /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		4CE1129E1DFD11C7001B4DCD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4CE465CC1DFD18C200EBBDD4 /* Id+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Id+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4CE465CD1DFD18C200EBBDD4 /* Id+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Id+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4CE465CE1DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchEntityWithHashtagOrUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4CE465CF1DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchEntityWithHashtagOrUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4CEFDE3A1DE88F7000B8C292 /* Smashtag-II.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smashtag-II.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEFDE3D1DE88F7000B8C292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CEFDE421DE88F7000B8C292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +67,11 @@
 		4CE1129C1DFCAE91001B4DCD /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				4CE1129D1DFD11C7001B4DCD /* Model.xcdatamodeld */,
+				4CE465CC1DFD18C200EBBDD4 /* Id+CoreDataClass.swift */,
+				4CE465CD1DFD18C200EBBDD4 /* Id+CoreDataProperties.swift */,
+				4CE465CE1DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataClass.swift */,
+				4CE465CF1DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataProperties.swift */,
 				4CE1129A1DFCAE8A001B4DCD /* CoreDataTableViewController.swift */,
 			);
 			name = "Core Data";
@@ -191,14 +206,19 @@
 			files = (
 				4C8EB55A1DED4B1A00236791 /* HistoryTableViewController.swift in Sources */,
 				4CEFDE5A1DE8949A00B8C292 /* DetailsTableViewController.swift in Sources */,
+				4CE465D31DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataProperties.swift in Sources */,
+				4CE465D01DFD18C200EBBDD4 /* Id+CoreDataClass.swift in Sources */,
 				4CEFDE3E1DE88F7000B8C292 /* AppDelegate.swift in Sources */,
 				4CEFDE5B1DE8949A00B8C292 /* ImageTableViewCell.swift in Sources */,
 				4CEFDE511DE8907E00B8C292 /* TweetTableViewController.swift in Sources */,
 				4CEFDE5C1DE8949A00B8C292 /* ImageViewController.swift in Sources */,
 				4CEFDE561DE8948000B8C292 /* TweetTableViewCell.swift in Sources */,
+				4CE465D11DFD18C200EBBDD4 /* Id+CoreDataProperties.swift in Sources */,
 				4CE112971DFCAA20001B4DCD /* HistoryInfoTableViewController.swift in Sources */,
 				4CE1129B1DFCAE8A001B4DCD /* CoreDataTableViewController.swift in Sources */,
+				4CE1129F1DFD11C7001B4DCD /* Model.xcdatamodeld in Sources */,
 				4C8EB5581DECB41100236791 /* TwitterSearchHistory.swift in Sources */,
+				4CE465D21DFD18C200EBBDD4 /* SearchEntityWithHashtagOrUser+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +383,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CE1129D1DFD11C7001B4DCD /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CE1129E1DFD11C7001B4DCD /* Model.xcdatamodel */,
+			);
+			currentVersion = 4CE1129E1DFD11C7001B4DCD /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4CEFDE321DE88F7000B8C292 /* Project object */;
 }
