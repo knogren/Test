@@ -2,7 +2,7 @@
 //  SearchEntityWithHashtagOrUser+CoreDataProperties.swift
 //  Smashtag-II
 //
-//  Created by Michael Shogren-Knaak on 12/10/16.
+//  Created by Michael Shogren-Knaak on 12/11/16.
 //  Copyright © 2016 Bacta.net. All rights reserved.
 //
 
@@ -15,11 +15,10 @@ extension SearchEntityWithHashtagOrUser {
         return NSFetchRequest<SearchEntityWithHashtagOrUser>(entityName: "SearchEntityWithHashtagOrUser");
     }
 
-    @NSManaged public var hashtagMention: String?
-    @NSManaged public var infoType: String?
-    @NSManaged public var numberMentions: Int16
+    @NSManaged public var mention: String?
+    @NSManaged public var mentionType: String?
+    @NSManaged public var numberOfMentions: Int16
     @NSManaged public var searchTerm: String?
-    @NSManaged public var userMention: String?
     @NSManaged public var ids: NSSet?
 
 }

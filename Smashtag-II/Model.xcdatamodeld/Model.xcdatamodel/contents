@@ -5,15 +5,14 @@
         <relationship name="tweetSearch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchEntityWithHashtagOrUser" inverseName="ids" inverseEntity="SearchEntityWithHashtagOrUser" syncable="YES"/>
     </entity>
     <entity name="SearchEntityWithHashtagOrUser" representedClassName=".SearchEntityWithHashtagOrUser" syncable="YES">
-        <attribute name="hashtagMention" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="infoType" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="numberMentions" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mention" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mentionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfMentions" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="searchTerm" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="userMention" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="ids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Id" inverseName="tweetSearch" inverseEntity="Id" syncable="YES"/>
     </entity>
     <elements>
         <element name="Id" positionX="243" positionY="99" width="126" height="73"/>
-        <element name="SearchEntityWithHashtagOrUser" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="SearchEntityWithHashtagOrUser" positionX="-56" positionY="-27" width="128" height="118"/>
     </elements>
 </model>

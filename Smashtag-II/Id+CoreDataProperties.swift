@@ -2,12 +2,12 @@
 //  Id+CoreDataProperties.swift
 //  Smashtag-II
 //
-//  Created by Michael Shogren-Knaak on 12/10/16.
+//  Created by Michael Shogren-Knaak on 12/11/16.
 //  Copyright © 2016 Bacta.net. All rights reserved.
 //
 
 import Foundation
-import CoreData 
+import CoreData
 
 extension Id {
 
