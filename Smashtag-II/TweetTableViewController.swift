@@ -44,11 +44,38 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
                 DispatchQueue.main.async {
                     if lastTwitterRequest == searchRequest && !newTweets.isEmpty {
                         weakSelf?.tweets.insert(newTweets, at: 0)
+                        weakSelf?.addToDatabase(tweets: newTweets)
                     }
                 }
             }
         }
     }
+    
+    fileprivate func addToDatabase(tweets tweetsToAdd: [Twitter.Tweet]) {
+        managedObjectContext?.performAndWait { [weak weakSelf = self] in
+            for tweet in tweetsToAdd {
+                SearchEntityWithHashtagOrUser.addMentionsToDatabase(
+                    fromSearch: weakSelf?.searchText,
+                    ofType: "Hashtag Mention",
+                    from: tweet.hashtags,
+                    in: tweet,
+                    withContext: weakSelf?.managedObjectContext )
+                SearchEntityWithHashtagOrUser.addMentionsToDatabase(
+                    fromSearch: weakSelf?.searchText,
+                    ofType: "User Mention",
+                    from: tweet.userMentions,
+                    in: tweet,
+                    withContext: weakSelf?.managedObjectContext)
+            }
+            do {
+                try weakSelf?.managedObjectContext?.save()
+            } catch let error {
+                print("could not save due to \(error)")
+            }
+        }
+//      run test function
+     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
