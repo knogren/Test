@@ -38,7 +38,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
     
     func searchForTweets() {
         if let query = searchText , query != "" {
-            let searchRequest = Request(search: query + " -filter:retweets", count: 100)
+            let searchRequest = Request(search: query, count: 5)
             let lastTwitterRequest = searchRequest
             searchRequest.fetchTweets { [weak weakSelf = self] newTweets in
                 DispatchQueue.main.async {
@@ -73,9 +73,25 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
                 print("could not save due to \(error)")
             }
         }
-//      run test function
+//        runDatabaseTest()
      }
     
+/*    func runDatabaseTest() {
+        let request: NSFetchRequest<SearchEntityWithHashtagOrUser> = SearchEntityWithHashtagOrUser.fetchRequest()
+        request.predicate = NSPredicate(format: "searchTerm = %@", "nfl")
+        if let matchingSearchEntries = try? managedObjectContext?.fetch(request) {
+            for entry in matchingSearchEntries! {
+                print("SearchTerm = \(entry.searchTerm)")
+                print("MentionType = \(entry.mentionType)")
+                print("Mention = \(entry.mention)")
+                print("Mention Count = \(entry.numberOfMentions)")
+            }
+        }
+        if let totalEntriesCount = try? managedObjectContext?.count(for: request) {
+            print("TOTAL ENTRIES: \(totalEntriesCount!)")
+        }
+    }
+ */
     
     override func viewDidLoad() {
         super.viewDidLoad()

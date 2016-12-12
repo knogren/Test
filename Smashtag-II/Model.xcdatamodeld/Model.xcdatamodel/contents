@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Id" representedClassName=".Id" syncable="YES">
         <attribute name="idNumber" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="tweetSearch" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchEntityWithHashtagOrUser" inverseName="ids" inverseEntity="SearchEntityWithHashtagOrUser" syncable="YES"/>
+        <relationship name="tweetSearch" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SearchEntityWithHashtagOrUser" inverseName="ids" inverseEntity="SearchEntityWithHashtagOrUser" syncable="YES"/>
     </entity>
     <entity name="SearchEntityWithHashtagOrUser" representedClassName=".SearchEntityWithHashtagOrUser" syncable="YES">
         <attribute name="mention" optional="YES" attributeType="String" syncable="YES"/>
