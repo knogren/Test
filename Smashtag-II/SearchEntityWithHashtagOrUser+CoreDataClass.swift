@@ -18,7 +18,7 @@ public class SearchEntityWithHashtagOrUser: NSManagedObject {
                 newIdEntity.idNumber = tweet.id
                 for mention in mentionArray {
                     let request: NSFetchRequest<SearchEntityWithHashtagOrUser> = SearchEntityWithHashtagOrUser.fetchRequest()
-                    request.predicate = NSPredicate(format: "searchTerm[c] = %@ && mentionType = %@ && mention[c] = %@", searchText!, mentionType, mention.keyword )
+                    request.predicate = NSPredicate(format: "searchTerm =[c] %@ && mentionType = %@ && mention =[c] %@", searchText!, mentionType, mention.keyword )
                     do {
                         if let matchingSearchEntries = try context?.fetch(request) {
                             if !matchingSearchEntries.isEmpty {

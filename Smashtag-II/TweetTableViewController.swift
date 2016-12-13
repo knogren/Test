@@ -38,7 +38,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
     
     func searchForTweets() {
         if let query = searchText , query != "" {
-            let searchRequest = Request(search: query, count: 5)
+            let searchRequest = Request(search: query + " -filter:retweets", count: 100)
             let lastTwitterRequest = searchRequest
             searchRequest.fetchTweets { [weak weakSelf = self] newTweets in
                 DispatchQueue.main.async {

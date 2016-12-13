@@ -90,14 +90,19 @@ class HistoryTableViewController: UITableViewController {
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowTweets" {
-            if let cell = sender as? UITableViewCell {
-                if let searchText = cell.textLabel?.text {
+        if let cell = sender as? UITableViewCell {
+            if let searchText = cell.textLabel?.text {
+                if segue.identifier == "ShowTweets" {
                     if let tweetTableVC = segue.destination as? TweetTableViewController {
                         tweetTableVC.searchText = searchText
+                    }
+                } else if segue.identifier == "ShowHistoryInfo" {
+                    if let historyInfoTableVC = segue.destination as? HistoryInfoTableViewController {
+                        historyInfoTableVC.searchText = searchText
                     }
                 }
             }
         }
     }
+    
 }
